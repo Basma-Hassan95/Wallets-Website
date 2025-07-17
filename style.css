@@ -16,3 +16,48 @@ body {
 
      color: #0d6efd;
 }
+.hero-section {
+  height: 100vh;
+  background: url("./images/hero-section.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+.hero-title {
+  font-size: 3rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#hero img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1, .carousel-caption p {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+

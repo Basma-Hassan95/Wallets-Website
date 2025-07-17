@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 </head>
 <body>
@@ -63,6 +64,46 @@
     </div>
   </div>
 </nav>
+
+<section id="hero">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./images/hero-section.jpg" class="d-block w-100" alt="First slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="animate__animated animate__fadeInDown">Welcome to Our Shop</h1>
+          <p class="animate__animated animate__fadeInUp">Discover amazing deals</p>
+          <a href="#" class="btn btn-primary btn-lg mt-3 animate__animated animate__fadeInUp">Shop Now</a>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./images/hero-section2.jpg" class="d-block w-100" alt="Second slide">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="animate__animated animate__fadeInDown">Best Quality Products</h1>
+          <p class="animate__animated animate__fadeInUp">Shop with confidence</p>
+          <a href="#" class="btn btn-primary btn-lg mt-3 animate__animated animate__fadeInUp">Shop Now</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 <script src="app.js"></script>
