@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .hero-section {
+      background: url('./images/about-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+      position: relative;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-section .container {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span style="font-weight: 900;">Customize</span> Wallets
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link text-primary" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gift-items">Gift Items</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#"><i class="far fa-heart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section with Background Image -->
+<section class="hero-section text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">About Us</h1>
+    <p class="lead">Discover our journey, mission, and vision for the future.</p>
+  </div>
+</section>
+
+<!-- Our Story -->
+<section class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Our Story</h2>
+        <p>We started our journey with a passion for creating premium wallets that combine elegance with practicality. Over the years, we have grown into a brand trusted by thousands, delivering timeless designs with unmatched quality. Our products are crafted from carefully selected materials, ensuring durability and style that lasts for years. Every stitch, every fold, and every finish is done with love, aiming to bring joy to our customers.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="./images/about-story.jpg" alt="Our Story" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h4>Our Mission</h4>
+          <p>Our mission is to craft products that seamlessly blend sophistication and practicality. We aim to create wallets and accessories that not only complement your style but also meet the demands of modern life. We believe in ethical sourcing, skilled craftsmanship, and designs that stand the test of time. Every product we make tells a story of dedication and passion, ensuring our customers feel valued and inspired.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white shadow-sm rounded">
+          <h4>Our Vision</h4>
+          <p>Our vision is to become a globally recognized leader in premium leather goods, known for innovation, sustainability, and timeless appeal. We aspire to set new benchmarks in the industry by embracing modern trends while staying true to classic designs. We envision a future where our brand becomes synonymous with trust, quality, and luxury, delivering exceptional experiences to customers worldwide.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- Brand / About -->
+      <div class="col-md-4 mb-4">
+        <h4 class="fw-bold">Customize Wallets</h4>
+        <p>Your one-stop shop for premium wallets and accessories. Quality and style combined for you.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#featured-products" class="text-light text-decoration-none">Featured Products</a></li>
+          <li><a href="#gift-items" class="text-light text-decoration-none">Gift Items</a></li>
+          <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">Contact Us</h5>
+        <p><i class="bi bi-geo-alt-fill"></i> Karachi, Pakistan</p>
+        <p><i class="bi bi-telephone-fill"></i> +92 300 1234567</p>
+        <p><i class="bi bi-envelope-fill"></i> info@walletsstore.com</p>
+
+        <!-- Social Links -->
+        <div>
+          <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom line -->
+    <div class="text-center pt-3 border-top border-secondary mt-4">
+      <p class="mb-0">&copy; 2025 Wallets Store. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
