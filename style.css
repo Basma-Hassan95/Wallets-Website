@@ -164,4 +164,7 @@ body {
     height: 180px;
   }
 }
-
+ .fixed-img {
+    height: 200px;
+    object-fit: cover;
+  }
