@@ -168,3 +168,25 @@ body {
     height: 200px;
     object-fit: cover;
   }
+
+/* Floating WhatsApp button */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-decoration: none !important;  /* underline remove */
+  font-family: Arial, sans-serif;   /* clean font */
+}
+
+.whatsapp-float i {
+  line-height: 60px;
+}
