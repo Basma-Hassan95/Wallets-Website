@@ -36,8 +36,9 @@ Wallets-Website/
 
 ---
 
-## 📸 Screenshots  
-https://raw.githubusercontent.com/Basma-Hassan95/Wallets-Website/main/wallets-website.png
+## 📸 Screenshot
+![Website Screenshot](https://raw.githubusercontent.com/Basma-Hassan95/Wallets-Website/main/wallets-website.png)
+
 
 
 ---
