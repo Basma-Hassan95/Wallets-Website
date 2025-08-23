@@ -18,75 +18,46 @@ function openWhatsApp(e) {
     }
   });
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".add-to-cart");
 
+  buttons.forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
 
-let cart = [];
+      const card = btn.closest(".card");
+      const name = card.querySelector(".card-title").innerText;
+      const price = parseFloat(card.querySelector(".fw-semibold").innerText.replace("$", ""));
+      const image = card.querySelector("img").src;
 
-document.querySelectorAll(".add-to-cart").forEach(button => {
-  button.addEventListener("click", function (e) {
-    e.preventDefault();
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    const name = this.getAttribute("data-name");
-    const price = parseFloat(this.getAttribute("data-price"));
+      const existing = cart.find(item => item.name === name);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({ name, price, image, qty: 1 });
+      }
 
-    // add item to cart
-    cart.push({ name, price });
+      localStorage.setItem("cart", JSON.stringify(cart));
 
-    // Show success alert
-    Swal.fire({
-      icon: 'success',
-      title: 'Added to Cart!',
-      text: `${name} has been added to your cart.`,
-      showConfirmButton: false,
-      timer: 1500
+      Swal.fire({
+        icon: 'success',
+        title: 'Added to Cart!',
+        text: `${name} has been added.`,
+        showConfirmButton: false,
+        timer: 1500
+      });
+
+      updateCartCount();
     });
-
-    console.log(cart); // check in console
   });
+
+  updateCartCount();
 });
 
-// Add to Cart Button Click
-document.querySelectorAll(".btn.btn-primary").forEach((btn, index) => {
-  btn.addEventListener("click", function (e) {
-    e.preventDefault();
-
-    // product details collect
-    const card = btn.closest(".card");
-    const name = card.querySelector(".card-title").innerText;
-    const price = card.querySelector(".fw-semibold").innerText.replace("$", "");
-    const image = card.querySelector("img").src;
-
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    // agar item pehle se hai to qty badhao
-    let existing = cart.find(item => item.name === name);
-    if (existing) {
-      existing.qty += 1;
-    } else {
-      cart.push({ name, price, image, qty: 1 });
-    }
-
-    localStorage.setItem("cart", JSON.stringify(cart));
-
-    // sweetalert
-    Swal.fire({
-      icon: "success",
-      title: "Added to Cart!",
-      text: `${name} has been added.`,
-      showConfirmButton: false,
-      timer: 1500
-    });
-
-    updateCartCount(); // count badge update
-  });
-});
-
-// cart count update function
 function updateCartCount() {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   document.getElementById("cart-count").innerText = cart.length;
 }
-
-// page load pe bhi update karo
-window.onload = updateCartCount;
 
