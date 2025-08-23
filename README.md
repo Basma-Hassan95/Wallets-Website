@@ -13,6 +13,7 @@ This project showcases a clean UI, responsive layout, and smooth user experience
 - **Modern UI:** Clean and attractive interface.  
 - **Product Display:** Showcases wallet products with images and descriptions.  
 - **Interactive Elements:** Smooth scrolling and navigation.  
+- **WhatsApp Integration:** Added WhatsApp icon for easy communication directly from the website.  
 
 ---
 
