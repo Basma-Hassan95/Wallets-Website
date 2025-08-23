@@ -37,7 +37,7 @@ Wallets-Website/
 ---
 
 ## 📸 Screenshots  
-_Add screenshots of your website UI here for better presentation._  
+wallets-website.png
 
 ---
 
